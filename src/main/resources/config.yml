@@ -1,0 +1,10 @@
+#Enables multipaper support.
+multipaper-support:
+  enabled: false
+  #the name to be used to save spawners, must be the same on all multipaper servers
+  server-name: multipaper
+
+spawner-owner-key: owner
+
+stackable-spawners:
+  enabled: false

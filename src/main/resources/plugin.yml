@@ -1,0 +1,11 @@
+name: Spawners
+version: ${project.version}
+main: fr.iban.spawners.SpawnersPlugin
+api-version: 1.16
+prefix: Spawners
+authors: [ Iban ]
+description: plugin de spawners
+depend:
+    - Core
+    - LuckPerms
+    - zMenu

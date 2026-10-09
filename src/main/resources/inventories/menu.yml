@@ -1,0 +1,77 @@
+name: "&5Spawners [%page%/%maxPage%]"
+size: 54
+items:
+    decoration:
+        isPermanent: true
+        item:
+            material: WHITE_STAINED_GLASS_PANE
+            name: "&e"
+        slots:
+            - 0-9
+            - 17-18
+            - 26-27
+            - 35-36
+            - 44-53
+    next:
+        type: NEXT
+        isPermanent: true
+        slot: 50
+        item:
+            material: ARROW
+            name: "&eSuivant"
+        else:
+            slot: 26
+            type: NONE
+            isPermanent: true
+            item:
+                material: WHITE_STAINED_GLASS_PANE
+                name: "&e"
+    previous:
+        type: PREVIOUS
+        isPermanent: true
+        slot: 48
+        item:
+            material: ARROW
+            name: "&ePrécédent"
+        else:
+            slot: 18
+            type: NONE
+            isPermanent: true
+            item:
+                material: WHITE_STAINED_GLASS_PANE
+                name: "&e"
+    close:
+        isPermanent: true
+        closeInventory: true
+        slot: 49
+        item:
+            material: RED_STAINED_GLASS_PANE
+            name: "&4Fermer"
+    filter:
+        slot: 53
+        item:
+            material: HOPPER
+            name: '&f&lFiltre'
+            lore:
+                - '&7➜ [ALL] Tous les spawners'
+                - '&7➜ [PLACED] Spawners placés'
+                - '&7➜ [UNPLACED] Spawners non placés'
+    limit_info:
+        slot: 45
+        type: SPAWNERS_LIMIT_INFO
+        item:
+            material: BOOK
+            name: '&f&lInformations'
+            lore:
+                - '&7Vous pouvez placer un nombre limité'
+                - '&7de spawners mais en posséder autant '
+                - '&7que vous le souhaitez.'
+                - '&fActuellement placé : &a%placed_count%&8/&a%placed_limit%'
+    spawners:
+        isPermanent: true
+        type: SPAWNERS_PAGINATION
+        slots:
+            - 10-16
+            - 19-25
+            - 28-34
+            - 37-43
